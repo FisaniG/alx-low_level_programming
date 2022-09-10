@@ -7,10 +7,10 @@
 
 int main(void)
 {
-int num;
-for (num = 0; num < 10; num++)
+int nu;
+for (nu = 0; nu < 10; nu++)
 {
-putchar(num);
+putchar(nu);
 }
 
 putchar(10);
