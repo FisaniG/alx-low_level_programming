@@ -10,19 +10,19 @@ int main(void)
 int a;
 int b;
 
-for (a = 48; a <= 57; a++)
+for (a = 0; a <= 99; a++)
 {
-for (b = 49; b <= 56; b++)
+for (b = 0; b <= 99; b++)
 {
 if (b > a)
 {
-putchar(a);
-putchar(b);
-putchar(10);
-putchar(a);
-putchar(b);
+putchar((a / 10) + 48)
+putchar((a % 10) + 48)
+putchar (10);
+putchar((b / 10) + 48);
+putchar((b % 10) + 48);
 
-if (a != 57 || b != 56)
+if (a != 99 || b != 98)
 {
 putchar(44);
 putchar(32);
@@ -33,3 +33,4 @@ putchar(32);
 putchar(10);
 return (0);
 }
+
