@@ -20,10 +20,11 @@ for (c = 50; c <= 57; c++)
 putchar(a);
 
 putchar(b);
+
 putchar(c);
 
 
-if (c > b && b > a)
+if (c > b)
 {
 if (a != 55 || b != 56 || c != 57)
 {
