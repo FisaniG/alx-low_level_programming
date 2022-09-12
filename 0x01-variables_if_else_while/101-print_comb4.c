@@ -11,11 +11,11 @@ int a;
 int b;
 int c;
 
-for (a = 48; a <= 57; a++)
+for (a = 48; a < 58; a++)
 {
-for (b = 49; b <= 57; b++)
+for (b = 49; b < 58; b++)
 {
-for (c = 50; c <= 57; c++)
+for (c = 50; c < 58; c++)
 {
 putchar(a);
 
