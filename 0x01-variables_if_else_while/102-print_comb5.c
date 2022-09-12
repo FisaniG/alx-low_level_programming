@@ -16,15 +16,14 @@ for (b = 0; b <= 99; b++)
 {
 if (b > a)
 {
-  putchar((a / 10) + 48);
-  
-  putchar((a % 10) + 48);
-  
-putchar (10);
+putchar((a / 10) + 48);
+putchar((a % 10) + 48);
+
+putchar(10);
 putchar((b / 10) + 48);
 putchar((b % 10) + 48);
 
-if (a != 99 || b != 98)
+if (a != 98 || b != 99)
 {
 putchar(44);
 putchar(32);
