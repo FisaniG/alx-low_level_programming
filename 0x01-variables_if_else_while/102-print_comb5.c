@@ -14,7 +14,7 @@ for (a = 0; a <= 99; a++)
 {
 for (b = 0; b <= 99; b++)
 {
-if (b > a)
+if (a < b)
 {
 putchar((a / 10) + 48);
 putchar((a % 10) + 48);
