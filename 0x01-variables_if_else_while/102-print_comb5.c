@@ -16,8 +16,10 @@ for (b = 0; b <= 99; b++)
 {
 if (b > a)
 {
-putchar((a / 10) + 48)
-putchar((a % 10) + 48)
+  putchar((a / 10) + 48);
+  
+  putchar((a % 10) + 48);
+  
 putchar (10);
 putchar((b / 10) + 48);
 putchar((b % 10) + 48);
