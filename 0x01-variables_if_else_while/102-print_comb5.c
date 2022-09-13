@@ -19,7 +19,7 @@ if (a < b)
 putchar((a / 10) + 48);
 putchar((a % 10) + 48);
 
-putchar(10);
+putchar(32);
 putchar((b / 10) + 48);
 putchar((b % 10) + 48);
 
