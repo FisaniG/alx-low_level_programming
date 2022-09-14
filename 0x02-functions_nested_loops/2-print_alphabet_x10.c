@@ -17,7 +17,9 @@ while (ch <= 'z')
 _putchar(ch);
 ch++;
 }
+}
 
 _putchar(10);
+
 count--;
 }
