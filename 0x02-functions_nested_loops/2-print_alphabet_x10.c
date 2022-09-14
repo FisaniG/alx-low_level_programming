@@ -16,7 +16,6 @@ for (count = 10; count >= 0; count--)
 {
 _putchar(ch);
 }
+}
 _putchar(10);
-}
-}
 }
