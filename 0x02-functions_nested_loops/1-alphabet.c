@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabets - in lower cases
+ * print_alphabet -print alphabets in lower cases
  *
- * Return: Always 0.
+ * Return 0
  */
 void print_alphabet(void)
 {
