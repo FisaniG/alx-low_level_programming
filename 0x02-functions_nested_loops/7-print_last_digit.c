@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_last_digit(int a) - print last digit of an interger.
+ * print_last_digit - print last digit of an interger
  * @a : interger number
- * Return: interger.
+ * Return: interger value
  */
 
 int print_last_digit(int a)
