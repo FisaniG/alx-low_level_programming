@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * print_last_digit(int) - print last digit
+ * @int : interger
+ * Return: 0.
+ */
+
+int print_last_digit(int);
+{
+int;
+int b = a % 10;
+_putchar(b);
+ _putchar(10);
+}
