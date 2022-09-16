@@ -4,7 +4,7 @@
  * mul - multiple two intergers
  * @b : interger value
  * @a : interger value
- * Return: number
+ * Return: 0
  */
 int mul(int a, int b)
 {

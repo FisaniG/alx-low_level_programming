@@ -2,11 +2,16 @@
 
 /**
  * _isupper - check upper case alphabet
- * @c: character checked
- * Return: 0 or 1
+ * @c: interger checked
+ * Return: 1 if successful or 0 if not
  */
 
 int _isupper(int c)
 {
-return (c >= 'A' && c <= 'Z');
+if (c >= 'A' && c <= 'Z')
+{
+return (1);
+}
+
+return (0);
 }
