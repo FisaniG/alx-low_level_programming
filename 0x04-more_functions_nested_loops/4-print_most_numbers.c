@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers - print numbers
- * Return: void
+ * Return: 0
  */
 void print_most_numbers(void)
 {
@@ -14,6 +14,6 @@ if  (a != 50 && a != 52)
 {
 _putchar(a);
 }
-
+}
 _putchar(10);
 }
