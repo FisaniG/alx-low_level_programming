@@ -18,9 +18,11 @@ while (b < a)
 _putchar(' ');
 b++;
 }
-a++;
 _putchar('\\');
+a++;
+_putchar('\n');
 n--;
 }
+
 _putchar('\n');
 }
