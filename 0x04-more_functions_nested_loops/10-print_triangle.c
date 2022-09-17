@@ -18,6 +18,7 @@ while (b < size - 1)
 _putchar(' ');
 b++;
 }
+b = 0;
 while (b < a)
 {
 _putchar('#');
