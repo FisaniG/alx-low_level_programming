@@ -8,26 +8,34 @@
 
 int main(void)
 {
-int a;
+int a = 1;
 
-for (a = 1; a <= 100; a++)
+while (a <= 100)
 {
-if (a % 3 == 0)
+if (a % 15 == 0)
 {
-printf("Fizz\t");
+printf("FizzBuzz");
+}
+
+else if (a % 3 == 0)
+{
+printf("Fizz");
 }
 else if (a % 5 == 0)
 {
-printf("Buzz\t");
-}
-else if (a % 15 == 0)
-{
-printf("FizzBuzz\t");
+printf("Buzz");
 }
 else
 {
-printf("%d\t", a);
+printf("%d", a);
 }
+
+if
+(a != 100)
+{
+putchar(' ');
+}
+a++;
 }
 
 printf("\n");
