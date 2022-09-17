@@ -13,7 +13,7 @@ int b;
 while (size > 0 && a <= size)
 {
 b = 0;
-while (b < size - 1)
+while (b < size - a)
 {
 _putchar(' ');
 b++;
