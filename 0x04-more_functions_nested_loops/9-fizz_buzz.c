@@ -29,7 +29,7 @@ else
 printf("%d\t", a);
 }
 }
- 
+
 printf("\n");
 
 return (0);
