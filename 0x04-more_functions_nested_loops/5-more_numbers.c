@@ -18,14 +18,13 @@ for (a = 0; a <= 14; a++)
 b = a;
 if (a > 9)
 {
-    
-
 _putchar('1');
 b = a % 10;
 }
 _putchar('0' + b);
 }
 
-_putchar(10);
+_putchar('\n');
 count--;
+}
 }
