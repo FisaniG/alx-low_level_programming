@@ -25,8 +25,11 @@ else
 {
 _putchar(prod + '0');
 }
+while (b < 9)
+{
 _putchar(',');
 _putchar(' ');
+}
 }
 _putchar('\n');
 
