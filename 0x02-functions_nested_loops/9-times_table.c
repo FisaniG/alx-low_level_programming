@@ -24,10 +24,10 @@ _putchar(prod % 10 + '0');
 else
 {
 _putchar(prod + '0');
-
-}
 }
 _putchar(',');
+_putchar(' ');
+}
 _putchar('\n');
 
 a++;
