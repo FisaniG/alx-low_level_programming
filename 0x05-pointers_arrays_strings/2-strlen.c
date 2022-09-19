@@ -1,20 +1,15 @@
 #include "main.h"
 
 /**
- * _strlen - prints size of string
+ * _strlen - prints length size of string
  * @s : string to be counted
- * Description : return string length
- * Return : return an integer number
+ * Return: int number
  */
 int _strlen(char *s)
 {
-int a = 0;
-while (*s != '\0')
+int a;
+for (a = 0; s[a] != 0; a++)
 {
-a++;
-s++;
 }
 return (a);
 }
-
-
