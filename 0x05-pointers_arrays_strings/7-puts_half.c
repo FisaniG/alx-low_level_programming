@@ -1,0 +1,28 @@
+#include "main.h"
+
+/**
+ * puts_half - print half string right hand
+ * @str : string to be halfed
+ * Return: array
+ */
+
+void puts_half(char *str)
+{
+int i;
+int j;
+for (i = 0; str[i] != 0; i++)
+{
+}
+for (j = 0; j <= i - 1; j++)
+{
+if (j >= i / 2 && j <= i && i % 2 == 0)
+{
+_putchar(str[j]);
+}
+else if (i % 2 != 0 && j > (i - 1) / 2 && j <= i)
+{
+_putchar(str[j]);
+}
+}
+_putchar('\n');
+}
