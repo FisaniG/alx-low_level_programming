@@ -20,11 +20,5 @@ swap = s[i];
 s[i] = s[new - 1 - i];
 s[new - 1 - i] = swap;
 }
-for (i = 0; i < new; i++)
-{
-_putchar(s[i]);
-}
 
-_putchar('\n');
 }
-
