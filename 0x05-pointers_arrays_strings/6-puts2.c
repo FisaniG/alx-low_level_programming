@@ -1,0 +1,25 @@
+#include "main.h"
+
+/**
+ * puts2 - print string skip 1 index
+ * @str : array to be printed
+ * Return : array
+ */
+
+void puts2(char *str)
+{
+int i;
+int j;
+
+for (i = 0; str[i] != 0; i++)
+{
+}
+for (j = 0; j <= i - 1; j++)
+{
+if (j % 2 == 0)
+{
+_putchar(str[j]);
+}
+}
+_putchar('\n');
+}
