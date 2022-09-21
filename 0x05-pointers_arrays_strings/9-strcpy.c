@@ -10,7 +10,7 @@ char *_strcpy(char *dest, char *src)
 {
 int b;
 int i;
- for (b = 0; (src + b) != 0; b++)
+for (b = 0; *(src + b) != 0; b++)
 {
 }
 for (i = 0; i < b; i++)
