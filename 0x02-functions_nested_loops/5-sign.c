@@ -16,7 +16,7 @@ _putchar('+');
 else if (n == 0)
 {
 a = 0;
-_putchar(0);
+_putchar('0');
 }
 else
 {
