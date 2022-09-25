@@ -15,14 +15,17 @@ while (a < 10)
 for (b = 0; b < 10; b++)
 {
 prod = a * b;
-while (prod > 9)
+if (prod > 9)
 {
 _putchar(prod / 10 + '0');
 _putchar(prod % 10 + '0');
 }
+else
+{
 _putchar(prod + '0');
+}
 
-if (b < 9)
+if (b > 0)
 {
 _putchar(',');
 _putchar(' ');
