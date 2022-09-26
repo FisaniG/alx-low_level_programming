@@ -8,13 +8,16 @@
  */
 char *_strchr(char *s, char c)
 {
+char *find = 0;
+if (*s != 0)
+{
+do {
 if (*s == c)
 {
-return ((char *)s);
+find = s;
+break;
 }
-
-else
-{
-return (0);
+} while (*s++);
 }
+return (find);
 }
