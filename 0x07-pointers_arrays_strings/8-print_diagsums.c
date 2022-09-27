@@ -19,6 +19,6 @@ j += a[i];
 k += a[size - i - 1];
 a += size;
 }
-printf("%d ", j);
-printf("%d ", k);
+printf("%d, ", j);
+printf("%d\n", k);
 }
