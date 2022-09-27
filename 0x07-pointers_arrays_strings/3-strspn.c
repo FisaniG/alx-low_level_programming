@@ -10,7 +10,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 int i;
 int j;
-int len;
+int len = 0;
 for (i = 0; s[i]; i++)
 {
 for (j = 0; accept[j]; j++)
@@ -20,11 +20,10 @@ if (accept[j] == s[i])
 len++;
 break;
 }
-
+}
 if (s[i] != accept[j])
 {
 return (len);
-}
 }
 }
 return (len);
