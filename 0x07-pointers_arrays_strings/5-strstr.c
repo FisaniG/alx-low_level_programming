@@ -12,6 +12,10 @@ char *_strstr(char *haystack, char *needle)
 const char *a = haystack;
 const char *b = needle;
 
+if (!*b)
+{
+return ((char *)haystack);
+}
 for (; *haystack; haystack++)
 {
 if (*haystack != *b)
