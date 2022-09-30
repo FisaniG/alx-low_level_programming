@@ -12,7 +12,7 @@ int i, res, neg;
 short digit;
 i = 0;
 digit = 0;
-res = 1;
+res = 0;
 neg = 1;
 while (s[i] != '\0')
 {
