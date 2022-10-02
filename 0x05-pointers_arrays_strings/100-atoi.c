@@ -8,30 +8,24 @@
 
 int _atoi(char *s)
 {
-int i, res, neg;
-short digit;
-i = 0;
-digit = 0;
-res = 0;
-neg = 1;
-while (s[i] != '\0')
+int sign = 1;
+unsigned int num = 0;
+while (*s++)
 {
-if (s[i] == '-')
+if (*s == '-')
 {
-neg *= -1;
+sign *= -1;
 }
-if (s[i] >= '0' && s[i] <= '9')
+else if (*s >= '0' && *s <= '9')
 {
-res *= 10;
-res -= (s[i] - '0');
-digit = 1;
+num = (num * 10) + (*s - '0');
 }
-else if (digit == 1)
+else if (num > 0)
 {
 break;
 }
-i++;
 }
-res *= neg;
-return (res);
+
+num *= sign;
+return (num);
 }
