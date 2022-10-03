@@ -14,7 +14,7 @@ int s3;
 int i = 0;
 if (s1 == 0   || s2 == 0)
 {
-return (0);
+return ("");
 }
 while (s1[len1])
 {
