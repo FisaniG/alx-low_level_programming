@@ -12,10 +12,10 @@ int len1 = 0;
 int len2 = 0;
 int s3;
 int i = 0;
-if (s1 == 0   || s2 == 0)
-{
-return ("");
-}
+if (s1 == 0)
+s1 = "";
+if (s2 == 0)
+s2 = "";
 while (s1[len1])
 {
 len1++;
