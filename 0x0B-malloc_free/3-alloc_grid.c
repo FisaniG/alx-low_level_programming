@@ -14,7 +14,7 @@ if (height <= 0 || width <= 0)
 {
 return (0);
 }
-grid = malloc(sizeof(char) * height);
+grid = malloc(sizeof(int *) * height);
 if (grid == 0)
 {
 return (0);
