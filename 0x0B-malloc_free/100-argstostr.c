@@ -25,7 +25,7 @@ len++;
 }
 len++;
 }
-res = malloc(sizeof(**av) * (len + ac));
+res = malloc(sizeof(**av) * (len + ac - 8));
 if (res == 0)
 {
 return (0);
