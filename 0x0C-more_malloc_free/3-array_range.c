@@ -15,13 +15,13 @@ return (0);
 }
 size = max - min + 1;
 array = malloc(sizeof(int) * size);
- if (array == 0)
+if (array == 0)
 {
 return (0);
 }
-for (i = 0; i < size; i++)
+for (i = 0; (min + i) <= max; i++)
 {
-array[i] = min++;
+array[i] = min + i;
 }
 return (array);
 }
