@@ -24,8 +24,8 @@ if (dest == 0)
 return (0);
 for (i = 0; s2[i] && i < n; i++)
 {
-dest[len++] = s2[i];
+dest[len + i] = s2[i];
 }
-dest = '\0';
+dest[len + i] = '\0';
 return (dest);
 }
