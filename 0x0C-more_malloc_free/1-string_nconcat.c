@@ -22,7 +22,7 @@ len++;
 dest = malloc(sizeof(char) * (len + 1));
 if (dest == 0)
 return (0);
-for (i = 0; s2[i] && i < n; i++)
+for (i = 0; s2[i] != '\0' && i < n; i++)
 {
 dest[len + i] = s2[i];
 }
