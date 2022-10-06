@@ -1,0 +1,36 @@
+#include "main.h"
+
+/**
+ * *string_nconcat - join string together upto n
+ * @s2: pointer to string2
+ * @s1: pointer to string1
+ * @n: number of char to be added
+ * Return: char array
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+char *dest;
+unsigned int len = n, i;
+if (s1 == 0)
+s1 = "";
+if (s2 == 0)
+s2 = "";
+for (i = 0; s1[i]; i++)
+{
+len++;
+}
+dest = malloc(sizeof(char) * (len + 1));
+if (dest == 0)
+return (0);
+len = 0;
+for (i = 0; s1[i]; i++)
+{
+dest[len++] = s1[i];
+}
+for (i = 0; s2[i] && i < n; i++)
+{
+dest[len++] = s2[i];
+}
+dest = '\0';
+return (dest);
+}
