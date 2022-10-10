@@ -24,6 +24,6 @@ printf("Owner: (nil)\n");
 else
 printf("Owner: %s\n", d->owner);
 }
-else
+else if (d == 0)
 return;
 }
