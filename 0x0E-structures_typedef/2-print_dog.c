@@ -15,7 +15,7 @@ return;
 }
 if (d->name == 0)
 {
-printf("Name: (nul)\n");
+printf("Name: (nil)\n");
 }
 else
 {
