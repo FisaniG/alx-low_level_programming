@@ -20,7 +20,7 @@ ptr = malloc(sizeof(dog_t));
 if (ptr == NULL)
 free(ptr);
 return (NULL);
-ptr->name = mallo(i + 1);
+ptr->name = malloc(i + 1);
 if (ptr->name == NULL)
 free(ptr->name);
 free(ptr);
@@ -34,7 +34,7 @@ free(ptr->owner);
 free(ptr->name);
 free(ptr);
 return (NULL);
-for (k = 0; k <= j; k++)
+for (k = 0; k <= j + 1; k++)
 ptr->owner[k] = owner[k];
 return (ptr);
 }
