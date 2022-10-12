@@ -18,11 +18,9 @@ while (owner[j] != '\0')
 j++;
 ptr = malloc(sizeof(dog_t));
 if (ptr == NULL)
-free(ptr);
 return (NULL);
 ptr->name = malloc(i + 1);
 if (ptr->name == NULL)
-free(ptr->name);
 free(ptr);
 return (NULL);
 for (k = 0; k <= i + 1; k++)
@@ -30,7 +28,6 @@ ptr->name[k] = name[k];
 ptr->age = age;
 ptr->owner = malloc(j + 1);
 if (ptr->owner == NULL)
-free(ptr->owner);
 free(ptr->name);
 free(ptr);
 return (NULL);
