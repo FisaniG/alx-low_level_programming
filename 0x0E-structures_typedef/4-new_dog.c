@@ -25,9 +25,11 @@ if (ptr->name == NULL)
 free(ptr->name);
 free(ptr);
 return (NULL);
-ptr->age = age;
 for (k = 0; k <= i; k++)
 ptr->name[k] = name[k];
+ptr->age = age;
+
+ptr->owner = malloc(sizeof(ptr->owner) * j);
 if (ptr->owner == NULL)
 free(ptr->owner);
 free(ptr->name);
