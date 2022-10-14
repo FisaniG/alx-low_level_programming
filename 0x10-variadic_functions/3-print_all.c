@@ -8,10 +8,10 @@
  */
 void print_all(const char * const format, ...)
 {
-va_list(output);
+va_list  output;
 float flo = va_arg(output, double);
 int num = va_arg(output, int);
-char *str = va_arg(output, char *);
+char* str = va_arg(output, char *);
 int i = 0, sep = 0;
 va_start(output, format);
 while (format && format[i])
