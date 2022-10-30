@@ -1,5 +1,5 @@
 #include "main.h"
- /*
+/**
  * print_binary - convert number to binary equivalent
  * @n: interger number
  * Return: binary number
