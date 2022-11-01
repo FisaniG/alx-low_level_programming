@@ -6,7 +6,7 @@
  * @letters: number of characters
  * Return: letters or 0 if it fails
  */
-size_t read_texfile(const char *filename, size_t letters)
+ssize_t read_texfile(const char *filename, size_t letters)
 {
 
 	int fd;
