@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * read_texfile - read a texfile
+ * read_textfile - read a texfile
  * @filename: name of the file
  * @letters: number of characters
- * Return: letters or 0 if it fails
+ * Return: textfile or 0 if it fails
  */
-ssize_t read_texfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 
 	int fd;
-	ssize_t rdfile, wrfile;
+	size_t rdfile;
 	char *buf;
 
 	if (!filename)
@@ -21,17 +21,21 @@ ssize_t read_texfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	buf = malloc(sizeof(char) * (letters));
+	buf = malloc(sizeof(char) * (letters + 1));
 	if (!buf)
+	{
+		free(buf);
 		return (0);
+	}
 
 	rdfile = read(fd, buf, letters);
-	wrfile = write(STDOUT_FILENO, buf, rdfile);
+
+	buf[rdfile] = '\0';
 
 	close(fd);
-
+	write(STDOUT_FILENO, buf, rdfile);
 	free(buf);
 
-	return (wrfile);
+	return (rdfile);
 }
 
