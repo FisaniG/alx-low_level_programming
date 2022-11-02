@@ -9,18 +9,15 @@ void print_times_table(int n)
 	int i = 0, j, p, prod;
 
 	if (n > 15 || n < 0)
-	{
 		return;
-	}
+
 	while (i <= n)
 	{
 		for (j = 0; j <= n; j++)
 		{
 			prod = i * j;
 			if (j == 0)
-			{
 				_putchar(prod + '0');
-			}
 			else if (prod < 10)
 			{
 				_putchar(' ');
