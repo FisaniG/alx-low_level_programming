@@ -6,7 +6,7 @@
  */
 void print_times_table(int n)
 {
-	int i = 0, j, prod;
+	int i = 0, j, p, prod;
 
 	if (n > 15 || n < 0)
 	{
@@ -21,15 +21,22 @@ void print_times_table(int n)
 			{
 				_putchar(prod + '0');
 			}
-			else
+			else if (prod > 9 && prod < 100)
 			{
 				_putchar(prod / 10 + '0');
+				_putchar(prod % 10 + '0');
+			}
+			else
+			{
+				p = prod / 10;
+				_putchar(p / 10 + '0');
+				_putchar(p % 10 + '0');
 				_putchar(prod % 10 + '0');
 			}
 			if (j < n)
 			{
 				_putchar(',');
-				_putchar(' ');
+				_putchar('\t');
 			}
 		}
 		_putchar('\n');
