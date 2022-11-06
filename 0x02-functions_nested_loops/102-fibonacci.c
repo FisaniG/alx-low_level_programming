@@ -12,7 +12,7 @@ int main(void)
 	b = 2;
 	next = a + b;
 
-	printf("%ld, %ld, ", a, b); 
+	printf("%ld, %ld, ", a, b);
 	for (i = 3; i <= 50; ++i)
 	{
 		printf("%ld", next);
@@ -20,7 +20,7 @@ int main(void)
 		b = next;
 		next = a + b;
 		if (i < 50)
-		{	
+		{
 			printf(", ");
 		}
 	}
