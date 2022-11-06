@@ -7,17 +7,18 @@ int main(void)
 {
 	unsigned long int a, b, c, d, sum;
 
-	a = sum = 0;
-	b = 1;
+	sum = 0;
+	a = 1;
+	b = 2;
 
 	for (c = 0; c < 50; c++)
 	{
 		d = a + b;
 		a = b;
 		b = d;
-		if (c % 2 == 0 && c < 4000000)
+		if (d % 2 == 0 && d < 4000000)
 		{
-			sum += c;
+			sum += d;
 		}
 	}
 	printf("%ld\n", sum);
