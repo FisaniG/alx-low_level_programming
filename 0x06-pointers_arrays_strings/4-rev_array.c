@@ -8,21 +8,15 @@
  */
 void reverse_array(int *a, int n)
 {
-int i;
-int j;
-int k;
-int *temp;
-temp = a;
+	int *beg = a;
+	int *end;
+	int hold = 0;
 
-for (i = 0; i < n; i++)
-{
-temp++;
-}
-for (j = 0; j < i / 2; j++)
-{
-k = a[j];
-a[j] = *temp;
-*temp = k;
-temp--;
-}
+	end = a + n - 1;
+	for (; beg < end; beg++, end--)
+	{
+		hold = *end;
+		*end = *beg;
+		*beg = hold;
+	}
 }
