@@ -9,7 +9,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *hashtable = malloc(sizeof(hash_table_t));
 	unsigned long int i; /* to iterate the array */
 	/* check if the table was created */
-	if (!hashtable)
+	if (hashtable == NULL)
 		return (NULL);
 	/* now, create the array to save the data */
 	hashtable->size = size;
