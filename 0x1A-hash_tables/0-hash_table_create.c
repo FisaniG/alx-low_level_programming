@@ -14,11 +14,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/* now, create the array to save the data */
 	hashtable->size = size;
 	hashtable->array = malloc(sizeof(hash_node_t *) * size);
-	if (!hashtable->array)
-	{
-		free(hashtable);
+	if (hashtable->array == NULL)
 		return (NULL);
-	}
 	/* finnaly, initialize the array whith all elements as null */
 	for (i = 0; i < size; i++)
 	hashtable->array[i] = 0;
